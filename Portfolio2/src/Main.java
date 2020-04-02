@@ -21,13 +21,15 @@ public class Main {
 
             System.out.println("Choose average grade for a semester and course");
             String AverageGradeSD2019 = scanner.nextLine();
+            String SD = "SELECT * FROM Average_gradeSD";
+            String ES1;
+            ES1 = "SELECT * FROM Average_gradeES1";
 
-            sql = "SELECT * FROM Semester_SD WHERE Average_gradeSD="+AverageGradeSD2019;
-
-
-
-
-
+            if(AverageGradeSD2019 == SD){
+                System.out.println(SD);
+            } else if (AverageGradeSD2019 == ES1){
+                System.out.println(ES1);
+            }
 
 
 
