@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args){
         Connection conn = null;
         try{
-            String url = "jdbc:sqlite:C:/Users/Tunis/IdeaProjects/Portfolio2/src/Students.db";
+            String url = "jdbc:sqlite:C:\\Users\\Bruger\\IdeaProjects\\Portfolio2\\Portfolio2\\src\\Students.db";
             conn = getConnection(url);
             Statement stmt = conn.createStatement();
 
@@ -22,7 +22,7 @@ public class Main {
             System.out.println("Choose average grade for a semester and course");
             String AverageGradeSD2019 = scanner.nextLine();
 
-            sql = "SELECT * FROM Semester_SD WHERE Grade="+AverageGradeSD2019;
+            sql = "SELECT * FROM Semester_SD WHERE Average_gradeSD="+AverageGradeSD2019;
 
 
 
